@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Todo App</title>
+  <style>
+    body {
+      height: 100vh;
+      width: full;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: antiquewhite;
+    }
+
+    h2 {
+      position: relative;
+
+      font-size: 100px;
+    }
+
+    input {
+      height: 25px;
+      width: 700px;
+      margin-bottom: 20px;
+      border-radius: 10px;
+      border: none;
+      padding: 10px;
+    }
+
+    button {
+      height: 30px;
+      width: 60px;
+      background-color: red;
+      color: white;
+      border-radius: 10px;
+      border: none;
+      margin-left: 10px;
+    }
+
+    ul {
+      height: 25px;
+      width: 700px;
+      margin-bottom: 20px;
+      border-radius: 10px;
+      border: none;
+      padding: 10px;
+    }
+
+    li {
+      height: 25px;
+      margin-bottom: 20px;
+      border-radius: 10px;
+      border: none;
+      list-style: none;
+
+    }
+
+    
+
+    li {
+      margin: 10px 0;
+    }
+
+    .completed {
+      text-decoration: line-through;
+      color: gray;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h2>Todo App</h2>
+
+  <input type="text" id="todoInput" placeholder="Enter todo">
+  <button onclick="addTodo()">Add</button>
+
+  <ul id="todoList"></ul>
+
+  <script src="todo.js"></script>
+</body>
+
+</html>
